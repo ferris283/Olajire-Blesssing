@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Workspace</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- LOADER (for entry animation) -->
+  <div id="preloader" role="status" aria-live="polite" aria-label="Loading, please wait">
+    <div class="loader-animation"></div>
+  </div>
+
+  <!-- HEADER + NAVIGATION -->
+  <header>
+    <div class="logo">Olajire</div>
+    <button
+      id="nav-toggle"
+      class="nav-toggle"
+      aria-label="Open main menu"
+      aria-controls="main-nav"
+      aria-expanded="false"
+      type="button"
+    >
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+    <nav id="main-nav" class="nav-links" role="navigation">
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+ 
+<!-- HERO SECTION -->
+<section id="home" class="hero">
+  <div class="overlay"></div>
+  <div class="hero-content">
+
+    <h1 class="changing-text">
+      <span id="rotate-heading">Welcome</span>
+    </h1>
+
+    <p class="changing-text">
+      <span id="rotate-paragraph">Discover creativity, work samples, and insights — all in one place.</span>
+    </p>
+
+  </div>
+</section>
+
+
+  <main>
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>I specialize in translating complex Web3 and blockchain concepts into clear, compelling writing. My experience includes shaping content for forward-thinking projects like Teneo and Athlerse, where I work closely with teams to communicate their innovation with clarity and impact.
+
+With 10 published research papers, I bring both depth and accuracy to my writing — whether it’s articles, technical pieces, or project documentation.
+
+My mission is simple: help people understand how blockchain is reshaping everyday life, one idea at a time.</p>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <h2>Services</h2>
+      <ul class="service-list">
+        <li>Web3 Content Writer</li>
+        <li>Narrative Strategist</li>
+        <li>On-Chain Data Interpretation</li>
+        <li>Web3 Social Media Manager</li>
+        <li>Crypto Presale & Launch Content Writer</li>
+      </ul>
+    </section>
+    
+    <!-- RESOURCES -->
+    <section id="resources" class="section">
+      <h2>Resources</h2>
+      <p>A collection of documents, writings, and professional work samples.</p>
+      <div class="resource-grid">
+        <div class="resource-card">
+          <h3>Resume / CV</h3>
+          <p>Access my professional resume outlining my technical and creative journey.</p>
+          <a href="https://docs.google.com/document/d/1K2_XvcQ5qCPVSohZJc84y7qPtF0kvoXWEdmnume4pKs/edit?usp=drivesdk" download class="btn">View Resume</a>
+        </div>
+        <div class="resource-card">
+          <h3>Articles & Writings</h3>
+          <p>Human-centered essays about crypto, culture, and the evolving digital world.</p>
+          <a href="writings.html" class="btn">View Writings</a>
+        </div>
+        <div class="resource-card">
+          <h3>Projects & Tools</h3>
+          <p>Work samples exploring Web3 ideas and digital expression through words and crypto-inspired visuals.</p>
+          <a href="#" class="btn">Explore Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section photo-gallery">
+      <h2>Portfolio Shots</h2>
+      <div id="dynamic-gallery"></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2>Get in Touch</h2>
+      <p>Let’s discuss how I can help you with your next project.</p>
+      <div class="contact-container">
+        <!-- Contact Form -->
+        <form id="contact-form">
+          <div class="form-group two-columns">
+            <input type="text" id="name" name="name" placeholder="Name" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+          </div>
+          <input type="text" id="subject" name="subject" placeholder="Subject" required>
+          <textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
+          <div class="security">
+            <label for="question">Please answer the question: 10 + 5 =</label>
+            <input type="text" id="question" name="question" required>
+          </div>
+          <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h3>Contact Details</h3>
+          <p><strong>Address:</strong> Kajola Irede Street Ibadan City, S5/445B</p>
+          <p><strong>Phone:</strong> +234 9151399134</p>
+          <p><strong>Website:</strong> <a href="#" target="_blank"> LINK</a></p>
+          <p><strong>Email:</strong> <a href="mailto: echelonwriters61@gmail.com">EMAIL</a></p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/olajire-dotun?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Dotun's Workspace. All rights reserved.</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
